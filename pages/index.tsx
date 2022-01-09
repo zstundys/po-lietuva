@@ -26,7 +26,7 @@ const Home: NextPage<IProps> = ({ places }) => {
       <main>
         <MapView places={places} />
         <div className="absolute inset-y-8 left-8 bg-white rounded-lg  w-96 overflow-hidden ">
-          <div className="p-8 overflow-y-scroll absolute inset-0">
+          <div className="p-8 overflow-y-scroll absolute inset-0 flex flex-col">
             <h1 className="text-3xl mb-4">Po Lietuvą!</h1>
             <PlaceList
               cognitivePaths={places.cognitivePaths}
@@ -34,6 +34,17 @@ const Home: NextPage<IProps> = ({ places }) => {
               observationTowers={places.observationTowers}
               pedestrianTrails={places.pedestrianTrails}
             />
+            <div className="text-slate-400 mt-auto">
+              Su 💖 iš{" "}
+              <a
+                target="_blank"
+                href="https://nesedeknamuose.lt/"
+                rel="noopener noreferrer"
+                className="hover:text-slate-600"
+              >
+                nesedėknamuose.lt
+              </a>
+            </div>
           </div>
         </div>
       </main>
