@@ -1,0 +1,18 @@
+---
+latitude: 55.308905
+longitude: 23.988914
+gid: 22
+name: Babėnų miško rekreacinis takas
+slug: babenu-misko-rekreacinis-takas
+---
+![](https://lh3.googleusercontent.com/umsh/AFiHsUHkxMDN5jMMjGlVmSsCylbH7BF9vbIlMKrcWm5XIZ-RtyM8P1rpRMxYheJnSUlsiIUcLJ4mGOm2OeOSoXZ5T40rAETvDIT7pqv5iYPtnDxIZODqUPeRXur1akR7JvbBUpenOiKjdvs-FnLx5cyVeTTcyu6j5wVS7gqTGGuowUYWg88Gm46AsgcSp_Gi6OKGDWh-ss6HVJsVqC3O9eqHgchbv2Qx0BHGr31e82Gnjc63H2Iu8OwxGD8Tdb-CHjkqKjq6N3uO5J1FSJZysnQ)  
+  
+Kėdainių pašonėje per Babėnų mišką driekiasi rekreacinis takas, kurio ilgis apie 7 kilometrus. Maršrutas nėra sužymėtas, todėl pasivaikščiojimui gali rinktis labiausiai patinkančius takus. Jų čia ne vienas.  
+  
+Plačiau apie taką skaitykite tinklaraštyje: http://nesedeknamuose.lt/vaziuojat-i-lietuvos-viduri-pasiimkit-su-savimi-saltkrepsi/  
+  
+![](https://lh3.googleusercontent.com/umsh/AFiHsUGYfdVU_VmPQ4BsdYGY0xOyzJwhTA0Kt3XCDUWpzfUashblkkd7oNqkwQNKYMOOtLx96huCw0d3yiAzU8jPwtuzEG8XJXJcyVPekOBojsjDTWnOWNWzv7MZDQ8JrFJVUcXSMNtyH3ZpyT6J2qycVeoev7QsxVL47FxawxKz1QVBQQ2ZPK6lVq5zlcDxjPyAzgcoyWcSeYQu7xw8n8uN3PWtNKAoYa1RsIzTPJhnJDPVn0xdZKGqfeoURKHYabD1Pi4rq50frC53I5PcKA)  
+  
+![](https://lh3.googleusercontent.com/umsh/AFiHsUF4bVc7U35bGXvJb2m60W7B07JLQ5tCaZM0l7eHPPsd5XbU_oskdMmlX7ijrbEQ_XDKm7NA4duyi-q0SOGHSUgRFr6PIEZOIRV1AEjmrKemucTZI05ai8-ItYns9JCajre1L7ubgd-JS5sUtzpaNYuvMJwIZ7DN1YZDSmsvczMr_lKtPhLCxCszr7kZBQVfx6BpkceHdOwWlZn5G9BmUu0qL8V1o5sizxQ3oRjaTqBcs_uoSe1zHmCJT9sXl1R8Dc3vVBec8cd4kipy8w)  
+  
+![](https://lh3.googleusercontent.com/umsh/AFiHsUHrAtmoRlcpemBSj2r9UirVvHXufwF6TzybftORVmr5247ceaXs2evBobqhKMe1YhbJKhJbAik-dyHoBRy85q8QUIB9ueAemVaTraLNO21OlHdIM8JsGsxYhqW7_gmYo6jGSQ1hh42RbjBAMWBLDf6j1y_Tk7Y2YVM6cyGoZPxhWNsHP_ON4kph_uycoQrJeXPNhfo12mmhukfBqMKLzwh02iegE1htejXZo27W3iY0fKpDHt-GljzYwwE136O7CznC2Av14Pti3gKHDA)

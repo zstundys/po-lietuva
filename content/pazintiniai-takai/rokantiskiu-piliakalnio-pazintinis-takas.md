@@ -1,0 +1,18 @@
+---
+latitude: 54.6871924
+longitude: 25.404994
+gid: 139
+name: Rokantiškių piliakalnio pažintinis takas
+slug: rokantiskiu-piliakalnio-pazintinis-takas
+---
+![](https://doc-0s-ag-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/28eoo108fdir5k5n06hq6eq03o/1641717000000/-WPmm_dsOCr8C_2Ftfdhs7CzXYdOD0wc/*/6AIsG_vbtl2kQg4ZlWDEOIRzFD4bmKvp7Egivu-MbTiQl_ZlEp44xY1J3E70GihIBGln3Z8Eeg0ZVqRNQkfTKMadIBP5D3y7M9J9OXfaN4gr-6htWXlHKLrRnmk9GxOJtkMemCrHfQFUfp4dg7QmeVhu0J3piyRTmOGiZdpi8VPpcJY8ktk7AjAu_Wv0pdMGjgg?session=0&fife)  
+  
+Naujosios Vilnios pakrašty prie Murlės upelio stūkso Rokantiškių piliakalnis, link kurio veda 1,1 km ilgio žiedinės formos Rokantiškių piliakalnio pažintinis takas  
+  
+![](https://doc-00-ag-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/4kkp5qqj08v6odqj09bdh5tsjc/1641717000000/-WPmm_dsOCr8C_2Ftfdhs7CzXYdOD0wc/*/6AIsG_vZNh2Mxp3w7cOy92uijpiCshTuflngh0dT_RICEyEekme0cfgsX3AmaMr7HZLOJA_DPLRSjdkUzxf4tTWXnwpELQ5yPRgf6mxVP_01nXjmr_TLpKJbT4aCurHfKiqWdKBS1hJoPFQnBeh_fAmOdhqYiCEuFVLnYfpPG0PsP5cLRUkeGiol7zY8ucwLIbA?session=0&fife)  
+  
+![](https://doc-0k-ag-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/1ftalthnj1uies8oa7cfq8tkvk/1641717000000/-WPmm_dsOCr8C_2Ftfdhs7CzXYdOD0wc/*/6AIsG_vbYGXNHA6OksFMC5bx7jAMXbKcYJh9Ot1qGhi_noM3aK5fXVJdzx3RpoY9YMVHg75FNRrp_znOWC84IaMcWdcwdqxir9R35GPo5tBkKDZno4i8td4w5Ch7Z7Zf4ur2ZmhmwlFNgEfd1eERIyDxxA59-lYfg_Gpku_j8t--L7PApv_UWSnTtxAEUAtBdKg?session=0&fife)  
+  
+![](https://doc-10-ag-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/b486t2m5q4i91n482lr1hers8g/1641717000000/-WPmm_dsOCr8C_2Ftfdhs7CzXYdOD0wc/*/6AIsG_vYmitfP0YZ8vOfASYbS5B4UDZfBswcGTitUX6oTVN4_gz3dGYUss0cHt6i3ZS0tBHQ4fLvJG3OzC9Z7PGYUkezowzT7tLev8s91R_HA5h0sOUkqbzRNzk-6tBb1v_nOpSxnkDPdoB2rg7TzLs0Ekr8Xvz5_Ryiwxm4l57CmYrbREJECakP-hJsP28pLag?session=0&fife)  
+  
+![](https://doc-00-ag-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/62nqbnbf7ns3k4j62t4vdojhac/1641717000000/-WPmm_dsOCr8C_2Ftfdhs7CzXYdOD0wc/*/6AIsG_vYk4QMaARC2bW8iB5M7HhLT4gr3jCu0UsdjDrghUp3Nq2UXLS8mRJrQq2JnKgpPcxkz_E-ItQDOsQEB8aCtmPCjXFov5lOCc8WxsLMXW05wuxkiDzY25Ix9YDeO08GDSIqzHUuy8uSI11PW5fPOTBT5rLT1VPOsjsuvPxgsj12LfK9vNY9SbggwK5Qstg?session=0&fife)

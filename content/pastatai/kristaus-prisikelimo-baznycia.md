@@ -1,0 +1,16 @@
+---
+latitude: 54.9024806
+longitude: 23.9166999
+gid: 7
+name: Kristaus Prisikėlimo bažnyčia
+slug: kristaus-prisikelimo-baznycia
+---
+![](https://doc-0g-ag-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/m0d706h8s2revkhlv780g3arqk/1641717000000/-WPmm_dsOCr8C_2Ftfdhs7CzXYdOD0wc/*/6AIsG_vbeHieePVv0tkzriaHvvY8ZQ4VEVYQCLERyO_BJUpZ2V0m5bVhQ-tvfcMcMhRBlSUDVhtFVrCBYXfWosZggt-zIRFy8BIxx_2Hr1tsrqqFjYxvwFVow0kI6rYfeM6TaPH69-bl-Y1IHOEeQcyvhIi8MLAiDB3znCE8S5YEMYMqCv24NalsndTNm89qyJA?session=0&fife)  
+  
+  
+  
+![](https://doc-08-ag-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/s0dvo37aoi5pmo590etl3f5c6o/1641717000000/-WPmm_dsOCr8C_2Ftfdhs7CzXYdOD0wc/*/6AIsG_vap58XD6X_h64dYhV37TDKAJwLiIZpWBSJ6KAq6i64P9Eux6nye3nhI2QplwKA7rS8_ndM2fbaSb5ijW4naqQ6RTtKf-m9IzleTHH-87NaMlZhG9I2tVKJxQxfb1PcPjZ_wKZum19sa6HR30iCHL7IIW6OI-TBhhM25NeL2VtayFFc7Zw7vdEA2-gtQjw?session=0&fife)  
+  
+![](https://doc-14-ag-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/ak85fu4aj16bup7pbo387v0pnc/1641717000000/-WPmm_dsOCr8C_2Ftfdhs7CzXYdOD0wc/*/6AIsG_vZfJ8pyIj1VucnDBwfLaZzPDpPcah5UxZd9CHj9tINu3DE6FyxcVIhLJ3kn046s5bphNPvbUpnCZx7lhRM8LRl7VzPAHZi-tLtrJJRnZtxgzwPdTteNnrAHVkXmSjp7nLgbY2_7RMj6r1_Vf25VNN9QUuLvVZKzrVV40ersrwWS0wu3_YBQijKXv3bsXw?session=0&fife)  
+  
+![](https://doc-0k-ag-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/nf8sioclhiot8d6rh564ufakfk/1641717000000/-WPmm_dsOCr8C_2Ftfdhs7CzXYdOD0wc/*/6AIsG_vZ6GyoPikOD5C4K9gP0kxot0BLmgz2kqI2yqf8T1qDd4s0-84uM7xRENRKurAw2K0fMFRFb8MLa9e7DuDzvsGWvApk4WPH8K34OH1b1fUuBIl6v5uPJPWXnyfLAQDsLvzUJUQB_JHA1RkLerlumjax_Oe5oFLpQPERkv787iDTzCvXhaIu2-GSNRtxUFQ?session=0&fife)

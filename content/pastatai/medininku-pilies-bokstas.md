@@ -1,0 +1,16 @@
+---
+latitude: 54.5401941
+longitude: 25.6511664
+gid: 5
+name: Medininkų pilies bokštas
+slug: medininku-pilies-bokstas
+---
+![](https://doc-0c-ag-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/vog2h6dupk07euffd7luld35dg/1641717000000/-WPmm_dsOCr8C_2Ftfdhs7CzXYdOD0wc/*/6AIsG_vZcFl7m--tGy75InjALAziQ6qkPMMF3qI3duB8PoZwa_j2i_l9oZBezqisAPob4eaI4jvv_C2RENaVHtWZclXDQ-XFPNGv8ywRuaPAvlY_W0RtTLgZqVbbZtGBh6JJc7nNc-XnlxOI5Au1ungaLA96DrFApAv9EEdIcL5FRrD3kJZLgaurwJiY3gRzSbg?session=0&fife)  
+  
+  
+  
+![](https://doc-08-ag-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/c7fj92jbhpf8pitbjjoj65tsjk/1641717000000/-WPmm_dsOCr8C_2Ftfdhs7CzXYdOD0wc/*/6AIsG_vYq_bz_4UADRWaFWHm8aDinDw7vaQxHMR9h5V-yehH6IxoJ615vAfrj_pVjixlZ8X2UYCddLYoHVkT4ZCvnmZ_J_pAwkgft_c0Ol_VhQGV0CjLOxQHgkiaHNW6gtnm5q2-cgEnnkctVNyI3lU0XHgn6_DQyjeww005fbQVYzRWz1HZpFwkoSgiBfDQsMw?session=0&fife)  
+  
+![](https://doc-0k-ag-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/frqgnrmdlcsdog92n6ds9g07ro/1641717000000/-WPmm_dsOCr8C_2Ftfdhs7CzXYdOD0wc/*/6AIsG_va9iuqM5qQ3s7eFX0rowvN59nualSG2_RLZxwYCMFvyHKm-6UyleeJ8S-N32ENTOa7o5tD_M2n6HOHkndw6ofkyaNKHuiz8JsTVZDUtsccub4_qH6YUxY6L4zuIIgLfIBxOev6n7tyq-iJ3WsYkogI9j-qtIAZYMGBHWS2RA0CIU95BlFE1gTnHf_8HCw?session=0&fife)  
+  
+![](https://doc-0o-ag-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/qfc9l09o4m99csif1dhj5bi428/1641717000000/-WPmm_dsOCr8C_2Ftfdhs7CzXYdOD0wc/*/6AIsG_va9VobWVHrejUwO90HvfJdC5ykGZ0APQQ385Sgw75ZjYnn_jW5UrHopxrpylssWBG4bd7aLLTHmhpBb5WwpSye6CEn0dQJIzQFvB1Wvdzmn1ynN_QPr5j1cTWQBOV0R_1HRaRovi3-o_0Wwel3EEB4_bgb9MYPvMNSwZTXSzU9XGenaHqHsuCanspTltA?session=0&fife)

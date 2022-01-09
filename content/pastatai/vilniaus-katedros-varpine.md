@@ -1,0 +1,16 @@
+---
+latitude: 54.6857357
+longitude: 25.2867696
+gid: 13
+name: Vilniaus katedros varpinė
+slug: vilniaus-katedros-varpine
+---
+![](https://doc-04-ag-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/h9p3pid3fc3ilqf42ofl7vhc5c/1641717000000/-WPmm_dsOCr8C_2Ftfdhs7CzXYdOD0wc/*/6AIsG_vbwCFuZROVeKTtNNR2Q7jJ-nr3BVm-aPLCNpoozOvUq-1Kgw72QiAhnMIX4i8WegO5bbLx2jNq1l_9Jk8ZhhBYtoz8vfW0zMiiZNv6nr1m3ozlhU6PCXHQ4z6HQ-Sm9HVIgMZ4GtHZgvU2EEEpXf0QM45ftenqt2FIKpCc4qfO6m31egi1rmmYUYtWbiA?session=0&fife)  
+  
+  
+  
+![](https://doc-0o-ag-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/326rm23q6494k1uemnmoqrpbio/1641717000000/-WPmm_dsOCr8C_2Ftfdhs7CzXYdOD0wc/*/6AIsG_vby-d2NJqfAQ7mZAjgkjdCESjfe3mey-RYaMpxTQRVIXA2keuejrsCUtbsUB7fVNAl4NZJYUZv68HxsPdKjN2H1N5WDaQ4pDTOSHFGWjvpFMsdUh9EnegGD1ZxIaftNIeqMQAtuWbd4RLx8R2EENuDHsABloUffSRWhErR8ktA_JzwuwzHCvfC09Mnwxg?session=0&fife)  
+  
+![](https://doc-0g-ag-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/87crjbmitn4m3s87s5rbp1ok34/1641717000000/-WPmm_dsOCr8C_2Ftfdhs7CzXYdOD0wc/*/6AIsG_vZGWuJBupJ6jBFnlrBgbTtKcpaNX049GruDCXkbszxFmf1ovumBzcP_TAALe_37VWCmp0FtEIO2H6SJ77RMAn8-JgwxzeDpBHXVUcAvcJaf4cYXapvWNNYFB3vbWb6GvojRZB3EYwqGdjxSczNafa67J1RW_VsJkCshY8hXxcpVh0WXP2BjDLlggS5E_A?session=0&fife)  
+  
+![](https://doc-00-ag-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/p8ulpl7pen7b364pppg3q4er88/1641717000000/-WPmm_dsOCr8C_2Ftfdhs7CzXYdOD0wc/*/6AIsG_vZazpwFhqeWKJwXVMB8sC0ABoWGp28pR2hCp2TrQcLQYMrXlcI9Hv24BLw6BJyQEx8IIXs3MEV_YvGF8glGXK3hkkmLE_DBdDkqZ7-NFZFKpqKydSNzZjad3PPms4D2KHuuYZy1pYz7QMlrQ55HJuIJXkW5wL9I_sHabmkMQiL7AJ-doEE58H85zuoo0g?session=0&fife)

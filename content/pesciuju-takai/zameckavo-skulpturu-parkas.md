@@ -1,0 +1,18 @@
+---
+latitude: 54.807181
+longitude: 25.397173
+gid: 7
+name: Zamečkavo skulptūrų parkas
+slug: zameckavo-skulpturu-parkas
+---
+![](https://lh3.googleusercontent.com/umsh/AFiHsUHqlb_PQpNQsORgxyM3YQkiTt5mnC6YwW_4KA40M1CLcVtftzI4C88THX6Bmarc9JoLQ_hLc9XmQk4kz8ixoihXWi2AJvl08lnn10s1Csrabp4i-8oC_vsxxEDeDKcflI2911Ph92bQt0N6l9rtYfAqCCdX5nt2BF-LMUQfghrmxMOwhb0Lt8-RAhQ80ejs6kKja3nXCyfEbJ6dsHyTr64KFXQc2CkcOaaOrP1aZ4sG_K8Y14cHLZZedeYLPMgjzqVuA-uHbIIlxfFf4g)  
+  
+Skulptūrų parke įrengti du žiedinės formos medinių lentelių takai. Takai neilgi, vos po kelis šimtus metrų, o prie jų stovi medinės skulptūros. Prie automobilių stovėjimo aikštelės įrangta pavėsinė.  
+  
+Plačiau apie taką skaitykite tinklaraštyje: http://nesedeknamuose.lt/kodel-europos-investicijos-slepiasi-lietuvos-miskuose/  
+  
+![](https://lh3.googleusercontent.com/umsh/AFiHsUGWAfsO3wFVJvX1C9eKzz_nNWXNgm4MwgwiWjVW0kla6oS1FhOOmDyjEaaubyL4D1yCz4khQaBzrnJENV7wriCgz-5rfO5i_TL1xukstQutUWqGbsEyMOhS8YDqDCjZqlvn23_Vyr6bEwaA6tPFBicCTfVUnLYhdV7sMPSxOqGDI0ORG-x3hSurllaB9yWENENlzild1bkHvcldhc8mPBy5mze0ktrLHozWYmGjfMc7DVGlRMaeshcXToyaVTqspujUd-IVQX9tO40)  
+  
+![](https://lh3.googleusercontent.com/umsh/AFiHsUGr1qiW-gpSo6LDKWHGFT8fqSulT57rjc5qu0wk6GIRQ85prqifyDP0FNraAuQYzBCZIJw88k9kAYtqifq8t_LEirF-E2LaV71Bu4VMlLn6Qi6xre0WqT4HRjcw3zlxzx2A-NMM59KKbSzeJkKCt2errLkQCUzyyZC5I3Nl-Mz6HkDKEMSyMcDhM0AdrJLp0am6_mHwieD5uca1u73_8thbU7OYain6zv5gKsRtHgNeobUXAGOXEmJ5CFPP66izVIiI1OrQyYC2R9DL)  
+  
+![](https://lh3.googleusercontent.com/umsh/AFiHsUE67p_fp26Jhrza3xYqdQCW4_-1_exvhGcQUiLwm07DZhH1n_97R8tZgBDKdU05P_G-JXfsFAeMDxANL-f_7bJ3tq_i3LL4anCdlmtxZfy8Zuc66Sy-9IeazNghk6BsCW1ebZY4Iih3dVvmjfwrJurv3ubNnvmSflwcP6TiUnvX7j2F1bBUU1kCqzMbPylPhvguU4iOZnUcdLCYbL6W88DK8xS_eFcXr7DUGBoH4tUvR-m7XRbHapYSWs6SEgKO71fL4BIlJzCrTA)
