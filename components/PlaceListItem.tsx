@@ -2,8 +2,9 @@
 import { Disclosure, Switch } from "@headlessui/react";
 import { BadgeCheckIcon, ChevronUpIcon, XIcon } from "@heroicons/react/solid";
 import classNames from "classnames";
-import React, { ReactElement, useState } from "react";
+import React, { ReactElement } from "react";
 import ReactMarkdown from "react-markdown";
+import { useVisited } from "../hooks/useVisited";
 import { IPlace } from "../models/place.interface";
 
 interface Props {
@@ -11,14 +12,21 @@ interface Props {
 }
 
 export default function PlaceListItem({ place }: Props): ReactElement {
-  const [enabled, setEnabled] = useState(false);
+  const { isVisited, setVisited } = useVisited(place.slug);
 
   return (
     <Disclosure>
       {({ open }) => (
         <>
           <Disclosure.Button
-            className={`text-black flex justify-between w-full py-2 text-sm font-medium text-left rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-opacity-75`}
+            className={classNames(
+              `flex justify-between w-full py-2 text-sm font-medium text-left rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-opacity-75`,
+              {
+                "line-through": isVisited,
+                "text-black": !isVisited,
+                "text-slate-500": isVisited,
+              }
+            )}
           >
             {place.name}
             <ChevronUpIcon
@@ -30,14 +38,14 @@ export default function PlaceListItem({ place }: Props): ReactElement {
           <Disclosure.Panel className=" text-xs text-slate-500">
             <div className="mb-4">
               <Switch
-                checked={enabled}
-                onChange={setEnabled}
+                checked={isVisited}
+                onChange={setVisited}
                 className={classNames(
                   "relative inline-flex items-center h-6 rounded-full pl-1 pr-2 ",
                   {
-                    "bg-lime-600": enabled,
-                    "text-white": enabled,
-                    "bg-slate-200": !enabled,
+                    "bg-lime-600": isVisited,
+                    "text-white": isVisited,
+                    "bg-slate-200": !isVisited,
                   }
                 )}
               >
@@ -45,12 +53,12 @@ export default function PlaceListItem({ place }: Props): ReactElement {
                   className={classNames(
                     `inline-block w-4 h-4 transform bg-white  rounded-full mr-2`,
                     {
-                      "text-lime-600": enabled,
+                      "text-lime-600": isVisited,
                     }
                   )}
                 >
-                  {enabled && <BadgeCheckIcon />}
-                  {!enabled && <XIcon className="scale-75" />}
+                  {isVisited && <BadgeCheckIcon />}
+                  {!isVisited && <XIcon className="scale-75" />}
                 </span>
                 Aplankyta
               </Switch>

@@ -1,5 +1,6 @@
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import React, { ReactElement } from "react";
+import { useIsVisited } from "../hooks/useVisited";
 import { IPlaces } from "../models/places.interface";
 
 interface Props {
@@ -8,6 +9,7 @@ interface Props {
 
 export default function MapView({ places }: Props): ReactElement {
   const [map, setMap] = React.useState(null);
+  const isVisited = useIsVisited();
 
   const onLoad = React.useCallback(function callback(map) {
     // const bounds = new window.google.maps.LatLngBounds();
@@ -36,28 +38,44 @@ export default function MapView({ places }: Props): ReactElement {
           <Marker
             key={p.slug}
             position={{ lat: p.latitude, lng: p.longitude }}
-            icon={"/markers/observational-tower.svg"}
+            icon={
+              isVisited(p.slug)
+                ? "/markers/visited.svg"
+                : "/markers/observational-tower.svg"
+            }
           />
         ))}
         {places.observationBuildings.map((p) => (
           <Marker
             key={p.slug}
             position={{ lat: p.latitude, lng: p.longitude }}
-            icon={"/markers/building.svg"}
+            icon={
+              isVisited(p.slug)
+                ? "/markers/visited.svg"
+                : "/markers/building.svg"
+            }
           />
         ))}
         {places.cognitivePaths.map((p) => (
           <Marker
             key={p.slug}
             position={{ lat: p.latitude, lng: p.longitude }}
-            icon={"/markers/cognitive-path.svg"}
+            icon={
+              isVisited(p.slug)
+                ? "/markers/visited.svg"
+                : "/markers/cognitive-path.svg"
+            }
           />
         ))}
         {places.pedestrianTrails.map((p) => (
           <Marker
             key={p.slug}
             position={{ lat: p.latitude, lng: p.longitude }}
-            icon={"/markers/pedestrian-trail.svg"}
+            icon={
+              isVisited(p.slug)
+                ? "/markers/visited.svg"
+                : "/markers/pedestrian-trail.svg"
+            }
           />
         ))}
       </GoogleMap>
