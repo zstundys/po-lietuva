@@ -1,7 +1,7 @@
 export interface IPlace {
   latitude: number;
   longitude: number;
-  name: number;
-  description: number;
+  name: string;
+  description: string;
   slug: string;
 }

@@ -12,10 +12,26 @@ export default function PlaceList({
 }: IProps): ReactElement {
   return (
     <>
-      <PlaceListGroup name="Pažintiniai takai" places={cognitivePaths} />
-      <PlaceListGroup name="Pesčiūjų takai" places={pedestrianTrails} />
-      <PlaceListGroup name="Apžvalgos bokštai" places={observationTowers} />
-      <PlaceListGroup name="Pastatai" places={observationBuildings} />
+      <PlaceListGroup
+        color="green"
+        name="Pažintiniai takai"
+        places={cognitivePaths}
+      />
+      <PlaceListGroup
+        color="lime"
+        name="Pesčiūjų takai"
+        places={pedestrianTrails}
+      />
+      <PlaceListGroup
+        color="indigo"
+        name="Apžvalgos bokštai"
+        places={observationTowers}
+      />
+      <PlaceListGroup
+        color="purple"
+        name="Pastatai"
+        places={observationBuildings}
+      />
     </>
   );
 }

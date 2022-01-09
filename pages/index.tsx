@@ -25,14 +25,16 @@ const Home: NextPage<IProps> = ({ places }) => {
 
       <main>
         <MapView places={places} />
-        <div className="absolute inset-y-8 left-8 bg-white rounded-xl p-8 w-96 overflow-auto">
-          <h1 className="text-3xl">Po Lietuvą!</h1>
-          <PlaceList
-            cognitivePaths={places.cognitivePaths}
-            observationBuildings={places.observationBuildings}
-            observationTowers={places.observationTowers}
-            pedestrianTrails={places.pedestrianTrails}
-          />
+        <div className="absolute inset-y-8 left-8 bg-white rounded-lg  w-96 overflow-hidden ">
+          <div className="p-8 overflow-y-scroll absolute inset-0">
+            <h1 className="text-3xl mb-4">Po Lietuvą!</h1>
+            <PlaceList
+              cognitivePaths={places.cognitivePaths}
+              observationBuildings={places.observationBuildings}
+              observationTowers={places.observationTowers}
+              pedestrianTrails={places.pedestrianTrails}
+            />
+          </div>
         </div>
       </main>
     </>
@@ -59,7 +61,9 @@ function getPlaces(): IPlaces {
     return pathsFiles.map<IPlace>((file) => {
       const fileData = fs.readFileSync(`${dir}/${file}`).toString();
 
-      return matter(fileData).data as IPlace;
+      const content = matter(fileData);
+      const fm = content.data as Omit<IPlace, "description">;
+      return { ...fm, description: content.content };
     });
   }
 }
