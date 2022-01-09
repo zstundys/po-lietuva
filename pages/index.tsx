@@ -24,7 +24,7 @@ const Home: NextPage<IProps> = ({ places }) => {
       </Head>
 
       <main>
-        <MapView />
+        <MapView places={places} />
         <div className="absolute inset-y-8 left-8 bg-white rounded-xl p-8 w-96 overflow-auto">
           <h1 className="text-3xl">Po Lietuvą!</h1>
           <PlaceList

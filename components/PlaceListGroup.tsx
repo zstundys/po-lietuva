@@ -10,7 +10,9 @@ interface Props {
 export default function PlaceListGroup({ name, places }: Props): ReactElement {
   return (
     <>
-      <p className="text-slate-500 text-xl">{name}</p>
+      <p className="text-slate-500 text-xl">
+        {name} ({places.length})
+      </p>
       <ul>
         {places.map((p) => (
           <li
