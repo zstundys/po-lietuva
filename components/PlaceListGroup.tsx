@@ -1,4 +1,4 @@
-import { Disclosure } from "@headlessui/react";
+import { Disclosure, Transition } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/solid";
 import React, { ReactElement } from "react";
 import { useVisitedCount } from "../hooks/useVisited";
@@ -46,7 +46,7 @@ export default function PlaceListGroup({
         {({ open }) => (
           <>
             <Disclosure.Button
-              className={`flex mb-3 justify-between w-full px-4 py-2 text-sm font-medium text-left rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-opacity-75 ${buttonColor}`}
+              className={`flex mb-3 justify-between w-full px-4 py-2 text-sm font-medium text-left rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-opacity-75 ${buttonColor} transition-colors`}
             >
               <span>
                 {name} (
@@ -65,18 +65,27 @@ export default function PlaceListGroup({
                 } w-5 h-5 ${iconColor}`}
               />
             </Disclosure.Button>
-            <Disclosure.Panel className="px-4 mb-3 text-sm text-gray-500">
-              <ol>
-                {places.map((p) => (
-                  <li
-                    className="border-t border-t-slate-300 first:border-t-0"
-                    key={p.slug}
-                  >
-                    <PlaceListItem place={p} />
-                  </li>
-                ))}
-              </ol>
-            </Disclosure.Panel>
+            <Transition
+              enter="transition"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="transition"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <Disclosure.Panel className="px-4 mb-3 text-sm text-gray-500">
+                <ol>
+                  {places.map((p) => (
+                    <li
+                      className="border-t border-t-slate-300 first:border-t-0"
+                      key={p.slug}
+                    >
+                      <PlaceListItem place={p} />
+                    </li>
+                  ))}
+                </ol>
+              </Disclosure.Panel>
+            </Transition>
           </>
         )}
       </Disclosure>

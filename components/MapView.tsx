@@ -1,5 +1,6 @@
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import React, { ReactElement } from "react";
+import { useMap } from "../hooks/useMap";
 import { useIsVisited } from "../hooks/useVisited";
 import { IPlaces } from "../models/places.interface";
 
@@ -8,7 +9,7 @@ interface Props {
 }
 
 export default function MapView({ places }: Props): ReactElement {
-  const [map, setMap] = React.useState(null);
+  const { map, setMap } = useMap();
   const isVisited = useIsVisited();
 
   const onLoad = React.useCallback(function callback(map) {
@@ -37,6 +38,7 @@ export default function MapView({ places }: Props): ReactElement {
         {places.observationTowers.map((p) => (
           <Marker
             key={p.slug}
+            clickable={false}
             position={{ lat: p.latitude, lng: p.longitude }}
             icon={
               isVisited(p.slug)
@@ -48,6 +50,7 @@ export default function MapView({ places }: Props): ReactElement {
         {places.observationBuildings.map((p) => (
           <Marker
             key={p.slug}
+            clickable={false}
             position={{ lat: p.latitude, lng: p.longitude }}
             icon={
               isVisited(p.slug)
@@ -59,6 +62,7 @@ export default function MapView({ places }: Props): ReactElement {
         {places.cognitivePaths.map((p) => (
           <Marker
             key={p.slug}
+            clickable={false}
             position={{ lat: p.latitude, lng: p.longitude }}
             icon={
               isVisited(p.slug)
@@ -70,6 +74,7 @@ export default function MapView({ places }: Props): ReactElement {
         {places.pedestrianTrails.map((p) => (
           <Marker
             key={p.slug}
+            clickable={false}
             position={{ lat: p.latitude, lng: p.longitude }}
             icon={
               isVisited(p.slug)

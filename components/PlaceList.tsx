@@ -46,7 +46,14 @@ export default function PlaceList({
         showVisitedCount
       />
       {visitedPlaces.length ? (
-        <PlaceListGroup color="pink" name="Aplankyta" places={visitedPlaces} />
+        <>
+          <hr className="mb-3" />
+          <PlaceListGroup
+            color="pink"
+            name="Aplankyta"
+            places={visitedPlaces}
+          />
+        </>
       ) : null}
     </>
   );

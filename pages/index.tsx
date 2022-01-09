@@ -25,7 +25,7 @@ const Home: NextPage<IProps> = ({ places }) => {
 
       <main>
         <MapView places={places} />
-        <div className="absolute inset-y-8 left-8 bg-white rounded-lg  w-96 overflow-hidden ">
+        <div className="absolute inset-y-8 left-8 bg-white rounded-lg  w-96 overflow-hidden shadow-xl">
           <div className="p-8 overflow-y-scroll absolute inset-0 flex flex-col">
             <h1 className="text-3xl mb-4">Po Lietuvą!</h1>
             <PlaceList
