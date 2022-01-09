@@ -9,28 +9,26 @@ interface Props {
 }
 
 export default function MapView({ places }: Props): ReactElement {
-  const { map, setMap } = useMap();
+  const { setMap } = useMap();
   const isVisited = useIsVisited();
 
-  const onLoad = React.useCallback(function callback(map) {
-    // const bounds = new window.google.maps.LatLngBounds();
-    // map.fitBounds();
-    setMap(map);
-  }, []);
+  const onLoad = React.useCallback(
+    (map: google.maps.Map) => {
+      map.setCenter({ lat: 55.1214873, lng: 24.2983297 });
+      map.setZoom(8);
+      setMap(map);
+    },
+    [setMap]
+  );
 
-  const onUnmount = React.useCallback(function callback(map) {
+  const onUnmount = React.useCallback(() => {
     setMap(null);
-  }, []);
+  }, [setMap]);
 
   return (
     <LoadScript googleMapsApiKey="AIzaSyA_BAxuHmv7DgwTh2KDAtAbQanTItTNE_A">
       <GoogleMap
         mapContainerClassName="w-screen h-screen"
-        center={{
-          lat: 55.1214873,
-          lng: 24.2983297,
-        }}
-        zoom={8}
         options={{ streetViewControl: false, mapTypeControl: false }}
         onLoad={onLoad}
         onUnmount={onUnmount}
