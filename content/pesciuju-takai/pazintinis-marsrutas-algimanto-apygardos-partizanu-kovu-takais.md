@@ -2,8 +2,7 @@
 latitude: 55.6994562
 longitude: 25.3035249
 gid: 28
-name: Pažintinis maršrutas „Algimanto apygardos
-partizanų kovų takais“
+name: Pažintinis maršrutas „Algimanto apygardos partizanų kovų takais“
 slug: pazintinis-marsrutas-algimanto-apygardos-partizanu-kovu-takais
 ---
 ![](https://doc-10-ag-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/nrduht04spkvarc9pnbc05qbkc/1641717000000/-WPmm_dsOCr8C_2Ftfdhs7CzXYdOD0wc/*/6AIsG_vZNWgGJgp3byBOoUpyuZ4p75SndlzYY7Av0RLjm5IDF5C5NgkoG72btEonAuwb6yYIoLprWAS1ezIpHKbckaoOpQpFjabA_XaO5r9gzjh06P95vM5URpuYuCQt96oHXscBtNxDmvPAgXB9tDmjyaDl8e0RMrPYIBVHjMxcLtygOovXbs7cGCLNjcwzZrg?session=0&fife)  

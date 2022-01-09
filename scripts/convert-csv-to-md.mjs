@@ -42,7 +42,7 @@ function convertCsvToMd(csvFile, targetFolder) {
         latitude: parseFloat(latitude),
         longitude: parseFloat(longitude),
         gid,
-        name,
+        name: name.replace(/[\s\n]+/g, " ").trim(),
         description: mdConverter.turndown(description),
         slug: normalize(name),
         filename: `${normalize(name)}.md`,
@@ -63,7 +63,7 @@ function convertCsvToMd(csvFile, targetFolder) {
     md += `latitude: ${d.latitude}\n`;
     md += `longitude: ${d.longitude}\n`;
     md += `gid: ${d.gid}\n`;
-    md += `name: ${d.name}\n`;
+    md += `name: ${d.name.replace(/^'/g, "\\'").replace(/^"/g, '\\"')}\n`;
     md += `slug: ${d.slug}\n`;
     md += `---\n`;
     md += `${d.description}\n`;
@@ -82,8 +82,9 @@ function normalize(name) {
     .replace(/\p{Diacritic}/gu, "")
     .replace(/[()"“”,„]/g, "")
     .trim()
-    .replace(/\s+/gu, " ")
-    .replace(/\s/gu, "-");
+    .replace(/[\s\n\t]+/gu, " ")
+    .replace(/\s/gu, "-")
+    .trim();
 
   return result;
 }

@@ -2,8 +2,7 @@
 latitude: 55.3830967
 longitude: 21.2269271
 gid: 96
-name: Kintų girininkijos pažintinės rekreacijos takas 
-
+name: Kintų girininkijos pažintinės rekreacijos takas
 slug: kintu-girininkijos-pazintines-rekreacijos-takas
 ---
 ![](https://doc-00-ag-mymaps.googleusercontent.com/untrusted/hostedimage/ihucu48q9m5s1hftel5u85tfdc/di013us53j94suiahjfu2lr574/1641717000000/-WPmm_dsOCr8C_2Ftfdhs7CzXYdOD0wc/*/6AIsG_vYvx6sDNrP2lg0jCiz-ufPvmQhADtw-l68MFJb5PWFEKNcqOXg9ehI349FUINOUDZ21_60q4ooP8hEh3M3chnQ6NjxrT0LHYvA0AKI8LplFUa3mRnmgRTm6Zq_jv7V4ryo4W3b1LuYBqJRc_LPE-nrOZMI4K40BQqsfJVgkttoey1Aa_NwKYIdIi7_N?session=0&fife)  
