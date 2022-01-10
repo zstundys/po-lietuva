@@ -63,7 +63,7 @@ function Content({
     <>
       <Disclosure.Button
         className={classNames(
-          `flex justify-between w-full py-2 text-sm font-medium text-left rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-opacity-75 `,
+          `flex justify-between w-full py-2 font-medium text-left rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-opacity-75 `,
           {
             "line-through": isVisited,
             "text-black": !isVisited,

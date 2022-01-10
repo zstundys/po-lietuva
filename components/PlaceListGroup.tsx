@@ -1,5 +1,6 @@
 import { Disclosure, Transition } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/solid";
+import classNames from "classnames";
 import React, { ReactElement } from "react";
 import { useVisitedCount } from "../hooks/useVisited";
 import { IPlace } from "../models/place.interface";
@@ -29,6 +30,13 @@ const iconClassMap: Record<Props["color"], string> = {
   purple: "text-purple-500",
   pink: "text-pink-500",
 };
+const iconMap: Record<Props["color"], string> = {
+  green: "fas fa-walking",
+  lime: "fas fa-hiking",
+  indigo: "fas fa-binoculars",
+  purple: "fas fa-dungeon",
+  pink: "fas fa-check",
+};
 
 export default function PlaceListGroup({
   name,
@@ -46,11 +54,14 @@ export default function PlaceListGroup({
         {({ open }) => (
           <>
             <Disclosure.Button
-              className={`flex mb-3 justify-between w-full px-4 py-2 text-sm font-medium text-left rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-opacity-75 ${buttonColor} transition-colors`}
+              className={`flex mb-3 text-lg items-center w-full px-4 py-2  text-left rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-opacity-75 ${buttonColor} transition-colors`}
             >
-              <span>
-                <i className="fas fa-dungeon"></i>
-                {name} (
+              <i
+                aria-hidden="true"
+                className={classNames(iconMap[color], "mr-2 text-xl")}
+              ></i>
+              <span>{name}</span>
+              <span className="ml-auto opacity-80">
                 {visitedCount && showVisitedCount ? (
                   <>
                     {visitedCount} iš {places.length}
@@ -58,10 +69,9 @@ export default function PlaceListGroup({
                 ) : (
                   <>{places.length}</>
                 )}
-                )
               </span>
               <ChevronUpIcon
-                className={`${
+                className={`ml-2 ${
                   open ? "transform rotate-180" : ""
                 } w-5 h-5 ${iconColor}`}
               />
@@ -74,7 +84,7 @@ export default function PlaceListGroup({
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Disclosure.Panel className="px-4 mb-3 text-sm text-gray-500">
+              <Disclosure.Panel className="px-4 mb-3">
                 <ol>
                   {places.map((p) => (
                     <li
