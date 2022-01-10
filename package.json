@@ -1,11 +1,12 @@
 {
-  "name": "pazinti-lietuva",
+  "name": "pazink-lietuva",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "firebase deploy --only hosting"
   },
   "dependencies": {
     "@headlessui/react": "^1.4.2",
@@ -17,7 +18,7 @@
     "csv-parse": "^5.0.4",
     "fs-extra": "^10.0.0",
     "gray-matter": "^4.0.3",
-    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
     "next": "12.0.7",
     "next-optimized-images": "^2.6.2",
     "postcss": "^8.4.5",
