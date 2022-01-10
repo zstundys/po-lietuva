@@ -39,8 +39,8 @@ const Home: NextPage<IProps> = ({ places }) => {
               observationTowers={places.observationTowers}
               pedestrianTrails={places.pedestrianTrails}
             />
-            <div className="text-slate-400 mt-auto">
-              Su 💖 iš{" "}
+            <div className="text-slate-400 mt-auto text-right">
+              Su 💖 nuo{" "}
               <a
                 target="_blank"
                 href="https://nesedeknamuose.lt/"
@@ -48,6 +48,16 @@ const Home: NextPage<IProps> = ({ places }) => {
                 className="hover:text-slate-600"
               >
                 nesedėknamuose.lt
+              </a>
+              <br />
+              Projekto autorius:{" "}
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/%C5%BEanas-stundys-896623162/"
+                rel="noopener noreferrer"
+                className="hover:text-slate-600"
+              >
+                Žanas Stundys
               </a>
             </div>
           </div>
