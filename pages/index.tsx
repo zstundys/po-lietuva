@@ -45,7 +45,7 @@ const Home: NextPage<IProps> = ({ places }) => {
                 target="_blank"
                 href="https://nesedeknamuose.lt/"
                 rel="noopener noreferrer"
-                className="hover:text-slate-600"
+                className="hover:text-slate-600 font-semibold"
               >
                 nesedėknamuose.lt
               </a>
@@ -55,7 +55,7 @@ const Home: NextPage<IProps> = ({ places }) => {
                 target="_blank"
                 href="https://www.linkedin.com/in/%C5%BEanas-stundys-896623162/"
                 rel="noopener noreferrer"
-                className="hover:text-slate-600"
+                className="hover:text-slate-600 font-semibold"
               >
                 Žanas Stundys
               </a>

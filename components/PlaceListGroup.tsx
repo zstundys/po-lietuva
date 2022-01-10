@@ -58,7 +58,10 @@ export default function PlaceListGroup({
             >
               <i
                 aria-hidden="true"
-                className={classNames(iconMap[color], "mr-2 text-xl")}
+                className={classNames(
+                  iconMap[color],
+                  "mr-2 text-xl text-center h-5 w-5"
+                )}
               ></i>
               <span>{name}</span>
               <span className="ml-auto opacity-80">

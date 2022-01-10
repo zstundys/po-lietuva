@@ -16,7 +16,7 @@ export default function MapView({ places }: Props): ReactElement {
 
   const onLoad = React.useCallback(
     (map: google.maps.Map) => {
-      map.setCenter({ lat: 55.1214873, lng: 24.2983297 });
+      map.setCenter({ lat: 55.1214873, lng: 22.7983297 });
       map.setZoom(8);
       setMap(map);
     },

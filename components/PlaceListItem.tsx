@@ -4,6 +4,7 @@ import { BadgeCheckIcon, ChevronUpIcon, XIcon } from "@heroicons/react/solid";
 import classNames from "classnames";
 import React, { ReactElement, useEffect, useRef } from "react";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { useMap } from "../hooks/useMap";
 import { useVisited } from "../hooks/useVisited";
 import { IPlace } from "../models/place.interface";
@@ -89,7 +90,7 @@ function Content({
             checked={isVisited}
             onChange={setVisited}
             className={classNames(
-              "relative inline-flex items-center h-8 rounded-full pl-2 pr-3 transition-colors ",
+              "relative inline-flex  items-center h-8 rounded-full pl-2 pr-3 transition-colors font-semibold text-sm",
               {
                 "bg-lime-600": isVisited,
                 "text-white": isVisited,
@@ -132,8 +133,10 @@ function Content({
           </div>
         </div>
         <ReactMarkdown
-          className="prose prose-img:rounded-lg prose-img:my-4 mb-4 break-words"
+          className="prose prose-img:rounded-lg prose-img:my-4 prose-a:text-inherit hover:prose-a:text-slate-900 mb-4 break-words"
           children={place.description}
+          linkTarget="_blank"
+          remarkPlugins={[remarkGfm]}
         />
       </Disclosure.Panel>
     </>
