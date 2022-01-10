@@ -31,8 +31,8 @@ const iconClassMap: Record<Props["color"], string> = {
   pink: "text-pink-500",
 };
 const iconMap: Record<Props["color"], string> = {
-  green: "fas fa-walking",
-  lime: "fas fa-hiking",
+  green: "fas fa-hiking",
+  lime: "fas fa-walking",
   indigo: "fas fa-binoculars",
   purple: "fas fa-dungeon",
   pink: "fas fa-check",
