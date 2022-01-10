@@ -38,6 +38,7 @@ export default function MapView({ places }: Props): ReactElement {
         {places.observationTowers.map((p) => (
           <Marker
             key={p.slug}
+            title={`Apžvalgos bokštai / ${p.name}`}
             clickable={false}
             position={{ lat: p.latitude, lng: p.longitude }}
             icon={
@@ -50,6 +51,7 @@ export default function MapView({ places }: Props): ReactElement {
         {places.observationBuildings.map((p) => (
           <Marker
             key={p.slug}
+            title={`Pastatai / ${p.name}`}
             clickable={false}
             position={{ lat: p.latitude, lng: p.longitude }}
             icon={
@@ -62,6 +64,7 @@ export default function MapView({ places }: Props): ReactElement {
         {places.cognitivePaths.map((p) => (
           <Marker
             key={p.slug}
+            title={`Pažintiniai takai / ${p.name}`}
             clickable={false}
             position={{ lat: p.latitude, lng: p.longitude }}
             icon={
@@ -74,6 +77,7 @@ export default function MapView({ places }: Props): ReactElement {
         {places.pedestrianTrails.map((p) => (
           <Marker
             key={p.slug}
+            title={`Pesčiūjų takai / ${p.name}`}
             clickable={false}
             position={{ lat: p.latitude, lng: p.longitude }}
             icon={

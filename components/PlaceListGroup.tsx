@@ -1,4 +1,4 @@
-import { Disclosure, Transition } from "@headlessui/react";
+import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/solid";
 import classNames from "classnames";
 import React, { ReactElement } from "react";
@@ -54,7 +54,7 @@ export default function PlaceListGroup({
         {({ open }) => (
           <>
             <Disclosure.Button
-              className={`flex mb-3 text-lg items-center w-full px-4 py-2  text-left rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-opacity-75 ${buttonColor} transition-colors`}
+              className={`flex mb-3 text-lg items-center w-full px-4 py-2  text-left rounded-full focus:outline-none focus-visible:ring focus-visible:ring-opacity-75 ${buttonColor} transition-colors`}
             >
               <i
                 aria-hidden="true"
@@ -76,27 +76,18 @@ export default function PlaceListGroup({
                 } w-5 h-5 ${iconColor}`}
               />
             </Disclosure.Button>
-            <Transition
-              enter="transition"
-              enterFrom="opacity-0"
-              enterTo="opacity-100"
-              leave="transition"
-              leaveFrom="opacity-100"
-              leaveTo="opacity-0"
-            >
-              <Disclosure.Panel className="px-4 mb-3">
-                <ol>
-                  {places.map((p) => (
-                    <li
-                      className="border-t border-t-slate-300 first:border-t-0"
-                      key={p.slug}
-                    >
-                      <PlaceListItem place={p} />
-                    </li>
-                  ))}
-                </ol>
-              </Disclosure.Panel>
-            </Transition>
+            <Disclosure.Panel className="px-4 mb-3">
+              <ol>
+                {places.map((p) => (
+                  <li
+                    className="border-t border-t-slate-200 first:border-t-0"
+                    key={p.slug}
+                  >
+                    <PlaceListItem place={p} />
+                  </li>
+                ))}
+              </ol>
+            </Disclosure.Panel>
           </>
         )}
       </Disclosure>

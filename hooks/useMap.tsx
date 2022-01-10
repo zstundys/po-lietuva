@@ -9,12 +9,21 @@ export function useMap() {
   }, []);
 
   const focusMarker = useCallback((place: IPlace) => {
-    map?.panTo({ lat: place.latitude, lng: place.longitude });
-    const zoomLevel = map?.getZoom() || 0;
+    const bounds = new google.maps.LatLngBounds();
+    bounds.extend({ lat: place.latitude, lng: place.longitude });
 
-    if (zoomLevel < 12) {
-      map?.setZoom(12);
-    }
+    const offset = 0.02;
+    const center = bounds.getCenter();
+    bounds.extend(
+      new google.maps.LatLng(center.lat() + offset, center.lng() + offset)
+    );
+    bounds.extend(
+      new google.maps.LatLng(center.lat() - offset, center.lng() - offset)
+    );
+
+    map?.fitBounds(bounds, {
+      left: 320 + 64,
+    });
   }, []);
 
   return { map, setMap, focusMarker };

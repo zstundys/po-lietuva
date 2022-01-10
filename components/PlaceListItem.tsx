@@ -1,5 +1,5 @@
 /* eslint-disable react/no-children-prop */
-import { Disclosure, Switch, Transition } from "@headlessui/react";
+import { Disclosure, Switch } from "@headlessui/react";
 import { BadgeCheckIcon, ChevronUpIcon, XIcon } from "@heroicons/react/solid";
 import classNames from "classnames";
 import React, { ReactElement, useEffect, useRef } from "react";
@@ -78,48 +78,64 @@ function Content({
           })}
         />
       </Disclosure.Button>
-      <Transition
-        enter="transition"
-        enterFrom="transform opacity-0"
-        enterTo="transform opacity-100"
-        leave="transition"
-        leaveFrom="transform opacity-100"
-        leaveTo="transform opacity-0"
-      >
-        <Disclosure.Panel className="text-xs text-slate-500">
-          <div className="mb-4">
-            <Switch
-              checked={isVisited}
-              onChange={setVisited}
+      <Disclosure.Panel className="text-xs text-slate-500">
+        <div className="mb-4 flex items-center justify-between">
+          <Switch
+            title={
+              isVisited
+                ? "Pažymėti kaip neaplankytą"
+                : "Pažymėti kaip aplankytą"
+            }
+            checked={isVisited}
+            onChange={setVisited}
+            className={classNames(
+              "relative inline-flex items-center h-8 rounded-full pl-2 pr-3 transition-colors ",
+              {
+                "bg-lime-600": isVisited,
+                "text-white": isVisited,
+                "bg-slate-200": !isVisited,
+              }
+            )}
+          >
+            <span
               className={classNames(
-                "relative inline-flex items-center h-6 rounded-full pl-1 pr-2 transition-colors ",
+                `inline-block w-5 h-5 transform bg-white transition-colors rounded-full mr-2`,
                 {
-                  "bg-lime-600": isVisited,
-                  "text-white": isVisited,
-                  "bg-slate-200": !isVisited,
+                  "text-lime-600": isVisited,
                 }
               )}
             >
-              <span
-                className={classNames(
-                  `inline-block w-4 h-4 transform bg-white transition-colors rounded-full mr-2`,
-                  {
-                    "text-lime-600": isVisited,
-                  }
-                )}
-              >
-                {isVisited && <BadgeCheckIcon />}
-                {!isVisited && <XIcon className="scale-75" />}
-              </span>
-              Aplankyta
-            </Switch>
+              {isVisited && <BadgeCheckIcon />}
+              {!isVisited && <XIcon className="scale-75" />}
+            </span>
+            Aplankyta
+          </Switch>
+
+          <div className="flex gap-4">
+            <button
+              title="Rodyti žemėlapyje"
+              type="button"
+              onClick={() => focusMarker(place)}
+              className="hover:text-slate-700 text-2xl"
+            >
+              <i className="fas fa-map-marked"></i>
+            </button>
+            <a
+              title='Nuorodos per "Google Maps"'
+              href={`https://www.google.com/maps/dir/?api=1&destination=${place.latitude}%2C${place.longitude}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-slate-700 text-2xl"
+            >
+              <i className="fas fa-directions"></i>
+            </a>
           </div>
-          <ReactMarkdown
-            className="prose prose-img:rounded-lg prose-img:my-4 mb-4"
-            children={place.description}
-          />
-        </Disclosure.Panel>
-      </Transition>
+        </div>
+        <ReactMarkdown
+          className="prose prose-img:rounded-lg prose-img:my-4 mb-4 break-words"
+          children={place.description}
+        />
+      </Disclosure.Panel>
     </>
   );
 }
