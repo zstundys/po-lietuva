@@ -49,6 +49,7 @@ export default function PlaceListGroup({
               className={`flex mb-3 justify-between w-full px-4 py-2 text-sm font-medium text-left rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-opacity-75 ${buttonColor} transition-colors`}
             >
               <span>
+                <i className="fas fa-dungeon"></i>
                 {name} (
                 {visitedCount && showVisitedCount ? (
                   <>

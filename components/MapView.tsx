@@ -8,6 +8,8 @@ interface Props {
   places: IPlaces;
 }
 
+const apiKey = process.env.NEXT_PUBLIC_GOOGLE_API_KEY as string;
+
 export default function MapView({ places }: Props): ReactElement {
   const { setMap } = useMap();
   const isVisited = useIsVisited();
@@ -26,7 +28,7 @@ export default function MapView({ places }: Props): ReactElement {
   }, [setMap]);
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyA_BAxuHmv7DgwTh2KDAtAbQanTItTNE_A">
+    <LoadScript googleMapsApiKey={apiKey}>
       <GoogleMap
         mapContainerClassName="w-screen h-screen"
         options={{ streetViewControl: false, mapTypeControl: false }}

@@ -2,6 +2,7 @@ import fs from "fs-extra";
 import matter from "gray-matter";
 import type { GetStaticPropsResult, NextPage } from "next";
 import Head from "next/head";
+import Script from "next/script";
 import MapView from "../components/MapView";
 import PlaceList from "../components/PlaceList";
 import { IPlace } from "../models/place.interface";
@@ -14,8 +15,12 @@ interface IProps {
 const Home: NextPage<IProps> = ({ places }) => {
   return (
     <>
+      <Script
+        src="https://kit.fontawesome.com/f611f9ec07.js"
+        crossOrigin="anonymous"
+      />
       <Head>
-        <title>Po Lietuvą!</title>
+        <title>Pažink Lietuvą!</title>
         <meta
           name="description"
           content="Pažintiniai takai, pesčiūjų takai, apžvalgos bokštai, pastatai Lietuvoje"
