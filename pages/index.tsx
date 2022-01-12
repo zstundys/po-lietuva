@@ -1,8 +1,11 @@
+import { ChevronLeftIcon } from "@heroicons/react/solid";
+import classNames from "classnames";
 import fs from "fs-extra";
 import matter from "gray-matter";
 import type { GetStaticPropsResult, NextPage } from "next";
 import Head from "next/head";
 import Script from "next/script";
+import { useState } from "react";
 import MapView from "../components/MapView";
 import PlaceList from "../components/PlaceList";
 import { IPlace } from "../models/place.interface";
@@ -13,6 +16,8 @@ interface IProps {
 }
 
 const Home: NextPage<IProps> = ({ places }) => {
+  const [isCollapsed, setCollapsed] = useState(false);
+
   return (
     <>
       <Script
@@ -50,9 +55,47 @@ const Home: NextPage<IProps> = ({ places }) => {
 
       <main>
         <MapView places={places} />
-        <div className="absolute inset-y-8 left-8 bg-white rounded-lg  w-96 overflow-hidden shadow-xl">
-          <div className="p-8 overflow-y-scroll absolute inset-0 flex flex-col">
-            <h1 className="text-3xl mb-4">Pažink Lietuvą!</h1>
+        <div
+          onClick={() => (isCollapsed ? setCollapsed(!isCollapsed) : null)}
+          className={classNames(
+            "absolute inset-4 bottom-auto lg:inset-8  max-w-sm max-h-screen overflow-hidden bg-white rounded-lg transition-transform duration-500 ",
+            {
+              "-translate-x-full": isCollapsed,
+              "shadow-xl": !isCollapsed,
+            }
+          )}
+        >
+          <div
+            className={classNames(
+              "p-4 lg:p-8 lg:absolute inset-0 flex flex-col",
+              {
+                "overflow-y-scroll": !isCollapsed,
+                "overflow-y-hidden": isCollapsed,
+              }
+            )}
+            style={{ maxHeight: "calc(100vh - 32px)" }}
+          >
+            <div className="flex items-center justify-between  mb-4">
+              <h1 className="text-2xl lg:text-3xl">Pažink Lietuvą!</h1>
+              <button
+                onClick={() => setCollapsed(!isCollapsed)}
+                type="button"
+                title="Suskleisti/Išskleisti"
+                className={classNames(
+                  "w-8 h-8 rounded-full text-slate-500 hover:text-slate-700",
+                  {
+                    "translate-x-7": isCollapsed,
+                    "bg-white": isCollapsed,
+                  }
+                )}
+              >
+                <ChevronLeftIcon
+                  className={classNames("transition-transform", {
+                    "rotate-180": isCollapsed,
+                  })}
+                ></ChevronLeftIcon>
+              </button>
+            </div>
             <PlaceList
               cognitivePaths={places.cognitivePaths}
               observationBuildings={places.observationBuildings}
