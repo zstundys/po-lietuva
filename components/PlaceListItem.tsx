@@ -6,6 +6,7 @@ import React, { ReactElement, useEffect, useRef } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { useMap } from "../hooks/useMap";
+import { useSelectedPlaceChanged } from "../hooks/useSelectedPlace";
 import { useVisited } from "../hooks/useVisited";
 import { IPlace } from "../models/place.interface";
 
@@ -60,9 +61,22 @@ function Content({
     }
   }, [isOpen, place, focusMarker]);
 
+  const buttonRef = useRef<HTMLButtonElement>();
+  useSelectedPlaceChanged((p) => {
+    setTimeout(() => {
+      if (place.slug === p.slug && isOpen === false) {
+        buttonRef.current?.click();
+        setTimeout(() => {
+          buttonRef?.current?.scrollIntoView({ behavior: "smooth" });
+        }, 300);
+      }
+    }, 100);
+  });
+
   return (
     <>
       <Disclosure.Button
+        ref={buttonRef as any}
         className={classNames(
           `flex justify-between w-full py-2 font-medium text-left rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-opacity-75 `,
           {
@@ -75,11 +89,11 @@ function Content({
         {place.name}
         <ChevronUpIcon
           className={classNames("w-5 h-5 transition-transform", {
-            "transform  rotate-180": open,
+            "transform  rotate-180": isOpen,
           })}
         />
       </Disclosure.Button>
-      <Disclosure.Panel className="text-xs text-slate-500">
+      <Disclosure.Panel className="text-xs text-slate-500" unmount={false}>
         <div className="mb-4 flex items-center justify-between">
           <Switch
             title={

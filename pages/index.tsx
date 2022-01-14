@@ -52,13 +52,12 @@ const Home: NextPage<IProps> = ({ places }) => {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-
       <main>
         <MapView places={places} />
         <div
           onClick={() => (isCollapsed ? setCollapsed(!isCollapsed) : null)}
           className={classNames(
-            "absolute inset-4 bottom-auto lg:inset-8  max-w-sm max-h-screen overflow-hidden bg-white rounded-lg transition-transform duration-500 ",
+            "fixed inset-4 bottom-auto lg:inset-8  max-w-sm max-h-screen overflow-hidden bg-white rounded-lg transition-transform duration-500 ",
             {
               "-translate-x-full": isCollapsed,
               "shadow-xl": !isCollapsed,
@@ -71,6 +70,7 @@ const Home: NextPage<IProps> = ({ places }) => {
               {
                 "overflow-y-scroll": !isCollapsed,
                 "overflow-y-hidden": isCollapsed,
+                "overflow-x-hidden": isCollapsed,
               }
             )}
             style={{ maxHeight: "calc(100vh - 32px)" }}
@@ -82,7 +82,7 @@ const Home: NextPage<IProps> = ({ places }) => {
                 type="button"
                 title="Suskleisti/Išskleisti"
                 className={classNames(
-                  "w-8 h-8 rounded-full text-slate-500 hover:text-slate-700",
+                  "w-8 h-8 rounded-full text-slate-500 transition-transform duration-500 overflow-hidden hover:text-slate-700",
                   {
                     "translate-x-7": isCollapsed,
                     "bg-white": isCollapsed,
@@ -90,7 +90,7 @@ const Home: NextPage<IProps> = ({ places }) => {
                 )}
               >
                 <ChevronLeftIcon
-                  className={classNames("transition-transform", {
+                  className={classNames("transition-transform duration-500", {
                     "rotate-180": isCollapsed,
                   })}
                 ></ChevronLeftIcon>

@@ -1,6 +1,7 @@
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import React, { ReactElement } from "react";
 import { useMap } from "../hooks/useMap";
+import { useSelectedPlace } from "../hooks/useSelectedPlace";
 import { useIsVisited } from "../hooks/useVisited";
 import { IPlaces } from "../models/places.interface";
 
@@ -12,6 +13,7 @@ const apiKey = process.env.NEXT_PUBLIC_GOOGLE_API_KEY as string;
 
 export default function MapView({ places }: Props): ReactElement {
   const { setMap } = useMap();
+  const { selectPlace } = useSelectedPlace();
   const isVisited = useIsVisited();
 
   const onLoad = React.useCallback(
@@ -30,8 +32,11 @@ export default function MapView({ places }: Props): ReactElement {
   return (
     <LoadScript googleMapsApiKey={apiKey}>
       <GoogleMap
-        mapContainerClassName="w-screen h-screen"
-        options={{ streetViewControl: false, mapTypeControl: false }}
+        mapContainerClassName="fixed inset-0 w-screen h-screen"
+        options={{
+          disableDefaultUI: true,
+          clickableIcons: false,
+        }}
         onLoad={onLoad}
         onUnmount={onUnmount}
       >
@@ -39,8 +44,8 @@ export default function MapView({ places }: Props): ReactElement {
           <Marker
             key={p.slug}
             title={`Apžvalgos bokštai / ${p.name}`}
-            clickable={false}
             position={{ lat: p.latitude, lng: p.longitude }}
+            onClick={() => selectPlace?.(p)}
             icon={
               isVisited(p.slug)
                 ? "/markers/visited.png"
@@ -52,8 +57,8 @@ export default function MapView({ places }: Props): ReactElement {
           <Marker
             key={p.slug}
             title={`Pastatai / ${p.name}`}
-            clickable={false}
             position={{ lat: p.latitude, lng: p.longitude }}
+            onClick={() => selectPlace?.(p)}
             icon={
               isVisited(p.slug)
                 ? "/markers/visited.png"
@@ -65,8 +70,8 @@ export default function MapView({ places }: Props): ReactElement {
           <Marker
             key={p.slug}
             title={`Pažintiniai takai / ${p.name}`}
-            clickable={false}
             position={{ lat: p.latitude, lng: p.longitude }}
+            onClick={() => selectPlace?.(p)}
             icon={
               isVisited(p.slug)
                 ? "/markers/visited.png"
@@ -78,8 +83,8 @@ export default function MapView({ places }: Props): ReactElement {
           <Marker
             key={p.slug}
             title={`Pesčiūjų takai / ${p.name}`}
-            clickable={false}
             position={{ lat: p.latitude, lng: p.longitude }}
+            onClick={() => selectPlace?.(p)}
             icon={
               isVisited(p.slug)
                 ? "/markers/visited.png"
