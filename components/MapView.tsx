@@ -43,8 +43,8 @@ export default function MapView({ places }: Props): ReactElement {
             position={{ lat: p.latitude, lng: p.longitude }}
             icon={
               isVisited(p.slug)
-                ? "/markers/visited.svg"
-                : "/markers/observational-tower.svg"
+                ? "/markers/visited.png"
+                : "/markers/observational-tower.png"
             }
           />
         ))}
@@ -56,8 +56,8 @@ export default function MapView({ places }: Props): ReactElement {
             position={{ lat: p.latitude, lng: p.longitude }}
             icon={
               isVisited(p.slug)
-                ? "/markers/visited.svg"
-                : "/markers/building.svg"
+                ? "/markers/visited.png"
+                : "/markers/building.png"
             }
           />
         ))}
@@ -69,8 +69,8 @@ export default function MapView({ places }: Props): ReactElement {
             position={{ lat: p.latitude, lng: p.longitude }}
             icon={
               isVisited(p.slug)
-                ? "/markers/visited.svg"
-                : "/markers/cognitive-path.svg"
+                ? "/markers/visited.png"
+                : "/markers/cognitive-path.png"
             }
           />
         ))}
@@ -82,8 +82,8 @@ export default function MapView({ places }: Props): ReactElement {
             position={{ lat: p.latitude, lng: p.longitude }}
             icon={
               isVisited(p.slug)
-                ? "/markers/visited.svg"
-                : "/markers/pedestrian-trail.svg"
+                ? "/markers/visited.png"
+                : "/markers/pedestrian-trail.png"
             }
           />
         ))}
