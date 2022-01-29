@@ -1,5 +1,6 @@
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
-import React, { ReactElement } from "react";
+import classNames from "classnames";
+import React, { ReactElement, useState } from "react";
 import { useMap } from "../hooks/useMap";
 import { useSelectedPlace } from "../hooks/useSelectedPlace";
 import { useIsVisited } from "../hooks/useVisited";
@@ -15,9 +16,11 @@ export default function MapView({ places }: Props): ReactElement {
   const { setMap } = useMap();
   const { selectPlace } = useSelectedPlace();
   const isVisited = useIsVisited();
+  const [loaded, setLoaded] = useState(false);
 
   const onLoad = React.useCallback(
     (map: google.maps.Map) => {
+      setLoaded(true);
       map.setCenter({ lat: 55.1214873, lng: 22.7983297 });
       map.setZoom(8);
       setMap(map);
@@ -32,7 +35,9 @@ export default function MapView({ places }: Props): ReactElement {
   return (
     <LoadScript googleMapsApiKey={apiKey}>
       <GoogleMap
-        mapContainerClassName="fixed inset-0 w-screen h-screen"
+        mapContainerClassName={classNames("fixed inset-0 w-screen h-screen", {
+          invisible: !loaded,
+        })}
         options={{
           disableDefaultUI: true,
           clickableIcons: false,

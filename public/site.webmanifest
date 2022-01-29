@@ -14,7 +14,8 @@
     }
   ],
   "name": "Pažink Lietuvą",
-  "short_name": "Pažink Lietuvą",
+  "orientation": "portrait",
+  "short_name": "Pažink LT",
   "start_url": "/",
   "theme_color": "#ffffff"
 }

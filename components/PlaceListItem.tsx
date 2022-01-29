@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-children-prop */
 import { Disclosure, Switch } from "@headlessui/react";
 import { BadgeCheckIcon, ChevronUpIcon, XIcon } from "@heroicons/react/solid";
@@ -151,8 +152,20 @@ function Content({
           children={place.description}
           linkTarget="_blank"
           remarkPlugins={[remarkGfm]}
+          components={{ img: ImageRenderer }}
         />
       </Disclosure.Panel>
     </>
   );
+}
+
+function ImageRenderer(
+  props: React.DetailedHTMLProps<
+    React.ImgHTMLAttributes<HTMLImageElement>,
+    HTMLImageElement
+  >
+) {
+  const imageSrc = props.src;
+  const altText = props.alt;
+  return <img loading="lazy" src={imageSrc} alt={altText} />;
 }
